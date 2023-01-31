@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <assert.h>
+
+
+
+ char vogais[] = "aeiouAEIOU";
+int quantidadedeVogais(char palavra[]) {
+    int numVogais = 0, i, j;
+
+    for (i = 0; palavra[i] != '\0'; i++) {
+        for (j = 0; vogais[j] != '\0'; j++) {
+            if (vogais[j] == palavra[i]) {
+                numVogais++;
+                break;
+            }
+        }
+    }
+
+    return numVogais;
+}
+
+
+int main() {
+
+    char palavra[] = "abecedario";
+    assert(6 == quantidadedeVogais(palavra));
+
+    return 0;
+}
