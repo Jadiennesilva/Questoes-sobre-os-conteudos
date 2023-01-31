@@ -14,3 +14,21 @@ int main() {
 	printf("%s",frase);
 	return 0;
 }
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+	
+	char  frase[19];
+	
+	printf("digite sua frase: \n");
+	gets(frases);
+
+	printf("A frase lida foi: %s",frase);
+	puts(frases);
+	return 0;
+}
