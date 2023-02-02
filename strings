@@ -2,9 +2,9 @@
 #include <locale.h>
 #include <stdlib.h>
 
-int main(){
+
 	
-void selection_sort(int num[10], int tam){
+void selection_sort(int num[], int tam){
 	
 
 int i, j, min, aux;
@@ -25,8 +25,8 @@ for(i=0; i < tam; i++){
     	
    }	
   }
- }
-
+ 
+}
 
 int main(){
 	setlocale(LC_ALL,"portuguese_brazil");
@@ -41,21 +41,16 @@ int main(){
 	
 	
 	
-    selection_sort( vet, 10);
+    selection_sort(vetor, 10);
 
-   printf("quais são as ordem de idade");
+   printf("quais são as ordem de idade \n");
 	
 
 
 	for(int j=0; j < 10; j++){
-	scanf("%d", &vetor[j]);
+	printf("%d ", &vetor[j]);
 
-	}
+	}	 
 
-
-
-
-	 
-}
 	return 0;
 }
