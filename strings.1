@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+
+	
+void selection_sort(int num[], int tam){
+	
+
+int i, j, min, aux;
+
+for(i=0; i < tam; i++){
+	min=i;
+	
+	for(j = (i+1); j < tam; j++){
+		if(num[j] < num[min]){
+			min=j;
+		}
+	}
+	
+    if(i != min){
+    	aux = num[i];
+    	num[i] = num[min];
+    	num[min] = aux;
+    	
+   }	
+  }
+ 
+}
+
+int main(){
+	setlocale(LC_ALL,"portuguese_brazil");
+	
+	int vetor[10];
+	
+	for(int i=0; i < 10; i++){
+		printf("digite sua idade: ");
+		scanf("%d", &vetor[10]);
+
+	}
+	
+	
+	
+    selection_sort(vetor, 10);
+
+   printf("quais são as ordem de idade \n");
+	
+
+
+	for(int j= 10-1; j >= 0; j--){
+	printf("%d ", &vetor[j]);
+
+	}	 
+
+	return 0;
+}
