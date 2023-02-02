@@ -31,7 +31,18 @@ for(i=0; i < tam; i++){
 int main(){
 	setlocale(LC_ALL,"portuguese_brazil");
 	
-	int 
+	int vetor[10];
+	
+	for(int i=0; i < 10; i++){
+		printf("digite sua idade: ");
+		scanf("%d", vetor[10]);
+
+	}
+    selection_sort( vet, 10);
+
+   printf("quais são as ordem de idade");
+	
+	 
 }
 	return 0;
 }
