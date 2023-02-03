@@ -1,0 +1,93 @@
+#include<stdio.h>
+#include<locale.h>
+#include<stdlib.h>
+#define t 3
+
+
+void ordem_original(int v[], int tam)
+void ordem_crescente(int v[], int tam)
+void ordem_decrescente(int v[], int tam);
+	
+void selection_sort(int v[], int tam, int tipo);
+
+
+int main() {
+	setlocale(LC_ALL,"portuguese_brazil");
+	
+	
+	
+    int mat[t], n1[t], n2[t], media[t], ordem[t];
+    int coluna=1;
+    int tipo=1;
+    
+    printf("informe os dados dos alunos: \n");
+    
+    for(int i=0; i<10; i++){
+    	printf("aluno %d\n", i+1);
+    	printf("matricula");
+    	scanf("%d", &mat[i]);
+    	
+    	
+    	printf("digite a sua primeira nota: \n");
+    	scanf("%d", &n1);
+    	
+    	printf("digite a sua segunda nota: \n");
+    	scanf("%d", &n2);
+    	
+    	
+    	media[i] = (n1[i] + n2[i])/2;
+    	
+    	
+    	ordem[i] = i;
+	}
+    
+    
+	printf("qual coluna deseja ordena: \n");
+	
+	printf(" [1] n1 [2] n2 [3] média: " ); 
+	scanf("%d",&coluna);
+	
+	printf("qual ordem vc deseja: \n");
+	printf("[0] matrícula [1] crescente [2] decrecente");
+	scanf("%d", &tipo);
+	
+	switch(coluna){
+		case 1:
+			selection_sort(n1,t, tipo);
+			break;
+			
+			case 2:
+			selection_sort(n2,t, tipo);
+			break;
+			
+		case 3:
+			selection_sort(media,t, tipo);
+			break;			
+		
+	
+			
+	}
+	
+	
+	printf("resultado ordenado: \n");
+	
+	for(int i=0; i<t; i++){
+		printf("MAT\t\tn1\tn2\tmédia\n");
+		printf("%d\t\t%d\t%d\t%d\n",mat[ordem[1]], n1[ordem[1]], n2[ordem[1]] media[ordem[1]] ) ;
+	}
+	
+	
+
+
+    return 0;
+}
+
+
+void ordem_original(int v[], int tam)
+     for(int i=0; i<tam; i++){
+     	vetor[i];
+	 }
+void ordem_crescente(int v[], int tam)
+void ordem_decrescente(int v[], int tam);
+	
+void selection_sort(int v[], int tam, int tipo);
