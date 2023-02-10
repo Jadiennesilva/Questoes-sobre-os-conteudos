@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+	void troca(int *x, int *y){
+	
+	int aux = *x;
+	*x = *y;
+	*y = aux;
+	}
+
+int main(){
+	setlocale(LC_ALL,"portuguese_brazil");
+	
+	int a,b;
+	a=5;
+	b=3;
+	troca(&a,&b);
+	printf("a=%d, b=%d\n", a,b);
+	
+	
+	
+
+	return 0;
+}
